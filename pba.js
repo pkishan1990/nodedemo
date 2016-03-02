@@ -1,26 +1,26 @@
 /*
-creating function, object, variable.
-basic bank account
+ creating function, object, variable.
+ basic bank account
 
-1. open account
-2. deposit money -> function deposit
-3. withdraw money -> function withdraw
-4. how much money in account //getBalance
+ 1. open account
+ 2. deposit money -> function deposit
+ 3. withdraw money -> function withdraw
+ 4. how much money in account //getBalance
  */
-var account={
-    balance:0
+var account = {
+    balance: 0
 };
-console.log('Initial Deposit: ' +account.balance);
+console.log('Initial Deposit: ' + account.balance);
 
-function deposit(account,amount){
-    account.balance+=amount;
+function deposit(account, amount) {
+    account.balance += amount;
 }
 
-function withdraw(account,amount){
-    account.balance-=amount;
+function withdraw(account, amount) {
+    account.balance -= amount;
 }
 
-function getBalance(account){
+function getBalance(account) {
     return account.balance;
 }
 
